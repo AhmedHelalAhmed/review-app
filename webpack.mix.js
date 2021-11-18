@@ -16,6 +16,16 @@ mix.js('resources/js/app.js', 'public/js').vue()
         require('postcss-import'),
         require('tailwindcss'),
     ])
+    .postCss('resources/nozha-rtl-dashboard-template/css/normalize.css', 'public/nozha-rtl-dashboard-template/css/normalize.css')
+    .postCss('resources/nozha-rtl-dashboard-template/css/fontawsome/all.min.css', 'public/nozha-rtl-dashboard-template/css/fontawsome/all.min.css')
+    .postCss('resources/nozha-rtl-dashboard-template/css/main.css', 'public/nozha-rtl-dashboard-template/css/main.css')
+    .copy('resources/nozha-rtl-dashboard-template/font/iranyekanwebbold.ttf', 'public/nozha-rtl-dashboard-template/fonts/iranyekanwebbold.ttf')
+    .copy('resources/nozha-rtl-dashboard-template/font/iranyekanweblight.ttf', 'public/nozha-rtl-dashboard-template/fonts/iranyekanweblight.ttf')
+    .copy('resources/nozha-rtl-dashboard-template/font/iranyekanwebregular.ttf', 'public/nozha-rtl-dashboard-template/fonts/iranyekanwebregular.ttf')
+    .copyDirectory('resources/nozha-rtl-dashboard-template/img', 'public/nozha-rtl-dashboard-template/img')
+    .copyDirectory('resources/nozha-rtl-dashboard-template/svg', 'public/nozha-rtl-dashboard-template/svg')
+    .js('resources/nozha-rtl-dashboard-template/js/vendor/modernizr.js', 'public/nozha-rtl-dashboard-template/js/vendor/modernizr.js')
+    .js('resources/nozha-rtl-dashboard-template/js/main.js', 'public/nozha-rtl-dashboard-template/js/main.js')
     .webpackConfig(require('./webpack.config'));
 
 if (mix.inProduction()) {

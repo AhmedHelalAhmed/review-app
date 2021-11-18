@@ -1,4 +1,20 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/nozha-rtl-dashboard-template/js/vendor/modernizr.js": "/nozha-rtl-dashboard-template/js/vendor/modernizr.js",
+    "/nozha-rtl-dashboard-template/js/main.js": "/nozha-rtl-dashboard-template/js/main.js",
+    "/nozha-rtl-dashboard-template/css/main.css": "/nozha-rtl-dashboard-template/css/main.css",
+    "/nozha-rtl-dashboard-template/css/fontawsome/all.min.css": "/nozha-rtl-dashboard-template/css/fontawsome/all.min.css",
+    "/nozha-rtl-dashboard-template/css/normalize.css": "/nozha-rtl-dashboard-template/css/normalize.css",
+    "/css/app.css": "/css/app.css",
+    "/nozha-rtl-dashboard-template/fonts/iranyekanwebbold.ttf": "/nozha-rtl-dashboard-template/fonts/iranyekanwebbold.ttf",
+    "/nozha-rtl-dashboard-template/fonts/iranyekanweblight.ttf": "/nozha-rtl-dashboard-template/fonts/iranyekanweblight.ttf",
+    "/nozha-rtl-dashboard-template/fonts/iranyekanwebregular.ttf": "/nozha-rtl-dashboard-template/fonts/iranyekanwebregular.ttf",
+    "/nozha-rtl-dashboard-template/img/banner.jpg": "/nozha-rtl-dashboard-template/img/banner.jpg",
+    "/nozha-rtl-dashboard-template/img/screen-fa.jpg": "/nozha-rtl-dashboard-template/img/screen-fa.jpg",
+    "/nozha-rtl-dashboard-template/img/screen.jpg": "/nozha-rtl-dashboard-template/img/screen.jpg",
+    "/nozha-rtl-dashboard-template/img/user-profile.jpg": "/nozha-rtl-dashboard-template/img/user-profile.jpg",
+    "/nozha-rtl-dashboard-template/svg/img.svg": "/nozha-rtl-dashboard-template/svg/img.svg",
+    "/nozha-rtl-dashboard-template/svg/logo-8.svg": "/nozha-rtl-dashboard-template/svg/logo-8.svg",
+    "/nozha-rtl-dashboard-template/svg/logo-grey.svg": "/nozha-rtl-dashboard-template/svg/logo-grey.svg",
+    "/nozha-rtl-dashboard-template/svg/logo.svg": "/nozha-rtl-dashboard-template/svg/logo.svg"
 }

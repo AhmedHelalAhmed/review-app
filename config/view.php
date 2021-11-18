@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        resource_path('views'),
+        resource_path('views/templates/nozha-rtl-dashboard-template'),
     ],
 
     /*
