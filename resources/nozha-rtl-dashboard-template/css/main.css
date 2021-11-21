@@ -199,6 +199,10 @@ h6 {
     transition-duration: 0.2s;
 }
 
+.container-fluid{
+    height: calc(100vh - 90px);
+}
+
 .avam-container.bmd-drawer-in::before {
     content: '';
     width: 240px;
@@ -290,11 +294,10 @@ p.side-comment {
     /*background: linear-gradient(1deg, #bcc7e0, #f2f2f3);*/
     /* border-radius: 30px; */
     /*box-shadow: 0 0 6px -3px black;*/
-    margin-right: 0;
+    margin-right: 0px;
     padding-right: 20px;
-    margin-bottom: 11px;
+    /*margin-bottom: 11px;*/
     padding-top: 10px;
-    height: 100vh;
 }
 
 .bmd-drawer-f-l>.bmd-layout-content {
