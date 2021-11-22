@@ -28,12 +28,12 @@
 <script>
 import {defineComponent} from 'vue'
 import AppLayout from '@/Layouts/AppLayout.vue'
-import Welcome from '@/Jetstream/Welcome.vue'
+import {Head} from '@inertiajs/inertia-vue3';
 
 export default defineComponent({
     components: {
         AppLayout,
-        Welcome,
+        Head,
     },
 })
 </script>

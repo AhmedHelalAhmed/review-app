@@ -83,9 +83,9 @@
                                 <button class="dropdown-item" type="button"><i
                                     class="far fa-user fa-sm c-main mr-2"></i>Profile
                                 </button>
-                                <button onclick="dark()" class="dropdown-item" type="button"><i
-                                    class="fas fa-moon fa-sm c-main mr-2"></i>Dark Mode
-                                </button>
+                                <a class="dropdown-item" :href="changeLanguageLink">
+                                    <i class="fas fa-language fa-sm c-main mr-2"></i>AR/EN
+                                </a>
                                 <button class="dropdown-item" type="button"><i
                                     class="fas fa-cog fa-sm c-main mr-2"></i>Setting
                                 </button>
@@ -134,12 +134,13 @@
                                             <h3 class="lite-text" v-if="$slots.header">
                                                 <slot name="header"></slot>
                                             </h3>
-                                            <span class="lite-text text-gray" v-if="$slots.subTitle"><slot name="subTitle"></slot></span>
+                                            <span class="lite-text text-gray" v-if="$slots.subTitle"><slot
+                                                name="subTitle"></slot></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4" v-if="$slots.breadcrumb">
-                                  <slot name="breadcrumb"></slot>
+                                    <slot name="breadcrumb"></slot>
                                 </div>
                             </div>
                         </div>
@@ -158,12 +159,6 @@
 
 <script>
 import {defineComponent} from 'vue'
-import JetApplicationMark from '@/Jetstream/ApplicationMark.vue'
-import JetBanner from '@/Jetstream/Banner.vue'
-import JetDropdown from '@/Jetstream/Dropdown.vue'
-import JetDropdownLink from '@/Jetstream/DropdownLink.vue'
-import JetNavLink from '@/Jetstream/NavLink.vue'
-import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink.vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
 
 export default defineComponent({
@@ -173,12 +168,6 @@ export default defineComponent({
 
     components: {
         Head,
-        JetApplicationMark,
-        JetBanner,
-        JetDropdown,
-        JetDropdownLink,
-        JetNavLink,
-        JetResponsiveNavLink,
         Link,
     },
 
@@ -200,6 +189,15 @@ export default defineComponent({
         logout() {
             this.$inertia.post(route('logout'));
         },
+    },
+    computed: {
+        changeLanguageLink() {
+            const currentLink = window.location.toString();
+            if (currentLink.indexOf("en") !== -1) {
+                return currentLink.replace("/en", "/ar");
+            }
+            return currentLink.replace("/ar", "/en");
+        }
     }
 })
 </script>
